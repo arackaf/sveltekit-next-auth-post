@@ -1,4 +1,4 @@
-export const load = async ({ locals }: any) => {
+export const load = async ({ locals }) => {
 	return {
 		loggedIn: false
 	};
