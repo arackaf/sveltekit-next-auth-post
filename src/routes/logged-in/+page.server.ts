@@ -4,6 +4,6 @@ export const load = async ({ parent }) => {
 	const parentData = await parent();
 
 	if (!parentData.loggedIn) {
-		throw redirect(302, '/');
+		redirect(302, '/');
 	}
 };
