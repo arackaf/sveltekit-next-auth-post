@@ -33,7 +33,6 @@ const client = DynamoDBDocument.from(new DynamoDB(dynamoConfig), {
 
 const auth = SvelteKitAuth({
 	providers: [
-		// @ts-ignore
 		GoogleProvider({
 			clientId: GOOGLE_AUTH_CLIENT_ID,
 			clientSecret: GOOGLE_AUTH_SECRET
@@ -50,4 +49,4 @@ const auth = SvelteKitAuth({
 	secret: AUTH_SECRET
 });
 
-export const handle = auth;
+export const handle = auth.handle;
