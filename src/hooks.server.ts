@@ -11,7 +11,7 @@ import {
 
 import { DynamoDB, type DynamoDBClientConfig } from '@aws-sdk/client-dynamodb';
 import { DynamoDBDocument } from '@aws-sdk/lib-dynamodb';
-import { DynamoDBAdapter } from '@next-auth/dynamodb-adapter';
+import { DynamoDBAdapter } from '@auth/dynamodb-adapter';
 import type { Adapter } from '@auth/core/adapters';
 
 const dynamoConfig: DynamoDBClientConfig = {
