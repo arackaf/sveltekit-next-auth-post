@@ -39,7 +39,7 @@ const auth = SvelteKitAuth({
 		})
 	],
 
-	adapter: DynamoDBAdapter(client, { tableName: DYNAMO_AUTH_TABLE }) as Adapter,
+	adapter: DynamoDBAdapter(client, { tableName: DYNAMO_AUTH_TABLE }),
 
 	session: {
 		maxAge: 60 * 60 * 24 * 365,
